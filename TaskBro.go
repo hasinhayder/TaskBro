@@ -3,6 +3,7 @@ package main
 import (
 	// "github.com/gin-gonic/gin"
 	"fmt"
+	"github.com/jinzhu/gorm"
 	"github.com/spf13/viper"
 )
 

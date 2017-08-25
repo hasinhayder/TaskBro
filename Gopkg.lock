@@ -38,6 +38,18 @@
   revision = "392dba7d905ed5d04a5794ba89f558b27e2ba1ca"
 
 [[projects]]
+  name = "github.com/jinzhu/gorm"
+  packages = ["."]
+  revision = "5174cc5c242a728b435ea2be8a2f7f998e15429b"
+  version = "v1.0"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/jinzhu/inflection"
+  packages = ["."]
+  revision = "1c35d901db3da928c72a72d8458480cc9ade058f"
+
+[[projects]]
   name = "github.com/magiconair/properties"
   packages = ["."]
   revision = "be5ece7dd465ab0765a9682137865547526d1dfb"
@@ -136,6 +148,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "03f6729be3f6fc51a498909240b38eba2728fa67dea6e43aa791cb44fb93c74b"
+  inputs-digest = "d2ca28048be82aa9b52ef80934f85838b1c04e464c6b38a963894c5e70aa3543"
   solver-name = "gps-cdcl"
   solver-version = 1
