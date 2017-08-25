@@ -1,13 +1,19 @@
 package main
 
-import "github.com/gin-gonic/gin"
+import (
+	// "github.com/gin-gonic/gin"
+	"fmt"
+	"github.com/spf13/viper"
+)
 
 func main() {
-	r := gin.Default()
-	r.GET("/ping", func(c *gin.Context) {
-		c.JSON(200, gin.H{
-			"message": "pong",
-		})
-	})
-	r.Run() // listen and serve on 0.0.0.0:8080
+	viper.SetConfigName("app") // no need to include file extension
+	viper.AddConfigPath("config")
+	err := viper.ReadInConfig()
+	if err != nil {
+		fmt.Println("Config file not found...")
+	} else {
+		fmt.Println("DBName", viper.Get("dbname"))
+	}
+
 }
